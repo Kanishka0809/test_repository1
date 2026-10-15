@@ -1,5 +1,70 @@
+PS C:\git_project> git --version
+git version 2.56.0.windows.2
+PS C:\git_project> pwd 
+
+Path
+----
+C:\git_project
+
+
+PS C:\git_project> ls
+
+
+    Directory: C:\git_project
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/15/2026   4:49 PM              0 File1.txt
+
+
 PS C:\git_project> git status
 fatal: not a git repository (or any of the parent directories): .git
 PS C:\git_project> git init
 Initialized empty Git repository in C:/git_project/.git/
+PS C:\git_project> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1.txt
+        PS Cgit_project git status.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\git_project> git add .       
+PS C:\git_project> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1.txt
+        new file:   PS Cgit_project git status.txt
+
+PS C:\git_project> git comit -m "Initial comit"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+PS C:\git_project> git commit -m "Initial Commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'acer@Kanishka.(none)')
+
+
+PS C:\git_project> git config --global user.name "Kanishka"
+PS C:\git_project> git config --global user.email "kanishkamhaskar17@gmail.com"
 PS C:\git_project> 
