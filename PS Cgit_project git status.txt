@@ -1,0 +1,5 @@
+PS C:\git_project> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\git_project> git init
+Initialized empty Git repository in C:/git_project/.git/
+PS C:\git_project> 
